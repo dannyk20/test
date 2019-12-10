@@ -1,0 +1,93 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #1e1e1f;
+}
+header{
+    height: 80px;
+    margin: 10px;
+}
+header img{
+    height: 120px;
+    width: 210px;
+    float: center;
+}
+nav{
+    margin: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul{
+    list-style: none;
+    text-align: center;
+    border-top: 1px solid orange;
+    border-bottom: 1px solid orange;
+    background-color: rgb(255, 51, 0);
+    padding: 10px 0;
+}
+
+nav ul li{
+    display: inline;
+    text-transform: uppercase;
+    padding: 0 10px;
+    letter-spacing: 10px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color:white;
+}
+
+nav ul li a:hover{
+    text-decoration: underline;
+    color:orange;
+    text-decoration: none;
+}
+
+aside#left{
+    margin: 0px;
+    width: 200px;
+    float: left;
+}
+#left ul{
+    margin:0;
+    color:#fff;
+    list-style: none;
+    text-indent: 15px;
+}
+
+#left h4{
+    margin-left:40px;
+    margin-top:0;
+    margin-bottom: 0;
+    background: #e3e3e3;
+}
+#left ul li{
+    background: #3f3f3f;
+    line-height: 30px;
+    font-size: 15px;
+}
+
+#left ul li a{
+    text-decoration: none;
+    color:#fff;
+    display: block;
+}
+
+#left ul li a:hover{
+    background: orangered;
+}
+#main{
+    color:#444;
+    overflow:hidden;
+    float:left;
+    width: 800px;
+    height: 500px;
+}
+
+footer{
+    background:#e3e3e3; 
+    color: #444;
+    clear: both;
+}

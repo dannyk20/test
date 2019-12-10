@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main1.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.at1').click(function(){
+                $('.t1').slideToggle(1000);
+            });
+        });
+    </script>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: #0e001a;
+        }
+        body h1{
+            color: white;
+            display:inline-block;
+            font-size: 20px;
+        }
+        #big1{
+            width: 150px;
+            height: 150px;
+        }
+        table {
+        width: 100%;
+        border: 1px solid #0e001a;
+        border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            text-align: left;
+        }
+        #mg{
+            width: 150px;
+            height: 150px;
+        }
+        article{
+            background-color: #0a0012;
+            color: white;
+        }
+        b{
+            color: #444;
+        }
+        #destro{
+            color: rgba(214, 0, 0, 0.904);
+        }
+        #wdestro{
+            color: orange;
+        }
+        div{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <article>
+        <h1> 1단계 특성</h1>
+        <b>상세한 설명을 보시려면 특성명을 눌러주세요</b>
+        <table>
+            <tr>
+                <th id="mg"> <img id="big1" src="attr1.png"></th>
+                <th>
+                    <span class="at1">용의 영혼 (Dragon Soul)</span>  <br><br> 
+                    <div class="t1">
+                        능력 강화 (W) <br>
+                        <span id='destro'>파괴자</span>: <span id='destro'>소각</span>으로 적 영웅에게 준 피해의 75% 만큼 생명력을 회복합니다.<br> 
+                        <span id='wdestro'>세계 파괴자</span>: <span id='wdestro'>용암 폭발</span>의 폭발로 적 영웅에게 준 피해의 150%만큼 생명력을 회복합니다.
+                    </div>
+                </th>
+            </tr>
+            <tr> 
+                <th id="mg"> <img id="big1" src="attr2.png"></th>          
+                <th>   
+                    <span class="at1">용암의 피 (Molten Blood)</span>   <br><br>
+                    <div class="t1">
+                        능력 강화 (고유 능력) <br>
+                        갑옷이 3개 이상이면 초당 최대 생명력의 0.4%를 회복합니다.
+                    </div> 
+                </th>  
+            </tr>
+            <tr>
+                <th id="mg"> <img id="big1" src="attr3.png"></th>          
+                <th>
+                    <span class="at1">용족의 권능 (Draconic Might)</span>   <br><br>
+                    <div class="t1"> 
+                        능력 강화 (고유 능력) <br>
+                        일반 공격으로 적 영웅에게 준 피해의 40%만큼 생명력을 회복합니다.<br>
+                        갑옷을 하나 잃으면 0.75초 동안 보호상태가 됩니다.
+                    </div> 
+                </th>
+            </tr>     
+        </table>
+    </article>
+</body>
+</html>

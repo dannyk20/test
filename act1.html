@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main1.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script>
+    $(document).ready(function(){
+        $("#t1").click(function(){
+            $("#big1").fadeIn(1000);
+            $("#btn1").show();
+        });
+        $("#btn1").click(function(){
+            $("#big1").animate({marginLeft:"+=100px"}, "fast");
+            $("#big1").animate({marginLeft:"-=100px"}, "fast");
+            $("#big1").animate({marginTop:"+=100px"}, "fast");
+            $("#big1").animate({marginTop:"-=100px"}, "fast");
+        });
+    });
+    </script>
+    <style>
+    body{
+        margin: 0;
+        padding: 0;
+        background-color: #0e001a;
+    }
+    body h1{
+        color: white;
+        font-size: 20px;
+    }
+    #big1{
+        display: none;
+    }
+    article{
+        background-color: #0a0012;
+        color: white;
+    }
+    b{color: #444;}
+    #btn1{display: none;}
+    </style>
+</head>
+<body>
+    <article>
+        <h1 id=t1>데스윙의 힘 앞에 전율하라!</h1> <b>이미지를 보려면 제목을 눌러주세요</b>
+        <img src="deathw.jpg" id="big1" width=600px height=400px;><br>
+        <button id="btn1">그의 분노를 느껴보세요</button><br><br>   
+        그가 다가오는 징후를 여러분은 느끼셨을 겁니다. 세계의 파괴에 대비하세요!<br> 
+        데스윙이 시공의 폭풍에 강림했습니다! 월드 오브 워크래프트와 하스스톤을 초토화시킨 것으로도 모자랐던<br> 
+        세계파괴자가 이제는 시공의 세계로 눈을 돌려 죽음과 파괴의 힘을 퍼뜨리려 합니다.<br>
+        황혼의 시간이 다가왔습니다, 필멸자들이여. 파괴자 앞에 무릎 꿇지 않으면 <br>
+        그 날개의 그늘 아래 모두 불탈 것입니다!
+    </article>
+</body>
+</html>

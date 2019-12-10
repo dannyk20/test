@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script>
+    $(document).ready(function(){
+        $("#s1").click(function(){
+            $("#big1").fadeIn(1000);
+        });
+        $("#big1").click(function(){
+            $("#big1").fadeOut(1000);
+        });
+    });
+    </script>
+</head>
+<body>
+    <h1>사용법</h1>
+    <ol>
+        <li>작은 이미지를 클릭하면 큰 이미지가 나타납니다.</li>
+        <li>큰 이미지를 클릭하면 큰 이미지가 사라집니다.</li>
+    </ol>
+    <div id="gallery">
+        <img src="dog1.png" width="200"height="150">
+        <img src="dog2.jpg" id="s1" width="200"height="150">
+        <img src="dog3.jpg" id="big1" width="400"height="300">
+    </div>
+</body>
+</html>
